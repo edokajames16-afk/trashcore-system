@@ -17,7 +17,7 @@ const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./library/lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetch, await, sleep, reSize } = require('./library/lib/function')
 const { default: trashcoreConnect, getAggregateVotesInPollMessage, delay, PHONENUMBER_MCC, makeCacheableSignalKeyStore, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@whiskeysockets/baileys")
-const channelId = "120363257205745956@newsletter";
+const channelId = {};
 const createToxxicStore = require('./library/database/basestore');
 const store = createToxxicStore('./store', {
   logger: pino().child({ level: 'silent', stream: 'store' }) });
@@ -50,7 +50,7 @@ if (global.db) setInterval(async () => {
 
 
 //------------------------------------------------------
-let phoneNumber = "254104245659"
+let phoneNumber = "2349067083840"
 const pairingCode = !!phoneNumber || process.argv.includes("--pairing-code")
 const useMobile = process.argv.includes("--mobile")
 
